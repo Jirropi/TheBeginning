@@ -8,10 +8,13 @@ def DeviceInput():
     print()
     while True:
         ip = input("ip Address: ")
-        try:
-            socket.inet_aton(ip)
-            break
-        except socket.error:
+        if ip.count('.') == 3:
+            try:
+                socket.inet_aton(ip)
+                break
+            except socket.error:
+                print("ip address invalid. please try again")
+        else:
             print("ip address invalid. please try again")
     username = input("username: ")
     password = getpass.getpass("password: ")
