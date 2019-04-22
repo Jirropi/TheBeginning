@@ -1,4 +1,4 @@
-import DeviceInput
+import device_input
 
 
 device1 = DeviceInput.DeviceInput()
