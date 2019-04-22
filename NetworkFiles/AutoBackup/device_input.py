@@ -4,7 +4,7 @@ import socket
 
 # Function collects IP,username,password and enable and
 # returns a set needed for netmiko
-def DeviceInput():
+def device_input():
     print()
     while True:
         ip = input("ip Address: ")
@@ -19,10 +19,10 @@ def DeviceInput():
     username = input("username: ")
     password = getpass.getpass("password: ")
     enable = getpass.getpass("enable: ")
-    deviceSet = {
+    device_set = {
         'device_type': 'cisco_ios',
         'ip': ip,
         'username': username,
         'password': password,
         'secret': enable}
-    return deviceSet
+    return device_set

@@ -1,7 +1,7 @@
 import device_input
 
 
-device1 = DeviceInput.DeviceInput()
+device1 = device_input.device_input()
 print(device1)
 
 # save_path = input("save location: ")
