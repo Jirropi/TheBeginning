@@ -1,10 +1,5 @@
-<<<<<<< HEAD:NetworkFiles/AutoBackup/Cisco-Autobackup.py
-import DeviceInput
-import os
-from netmiko import ConnectHandler
-=======
 import device_input
->>>>>>> cb90a84f39d0f265cecf635888b7be2b6a179bae:NetworkFiles/AutoBackup/cisco_autobackup.py
+import ConnectHandler from netmiko
 
 
 device1 = device_input.device_input()
