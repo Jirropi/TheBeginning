@@ -1,9 +1,13 @@
+<<<<<<< HEAD:NetworkFiles/AutoBackup/Cisco-Autobackup.py
 import DeviceInput
 import os
 from netmiko import ConnectHandler
+=======
+import device_input
+>>>>>>> cb90a84f39d0f265cecf635888b7be2b6a179bae:NetworkFiles/AutoBackup/cisco_autobackup.py
 
 
-device1 = DeviceInput.DeviceInput()
+device1 = device_input.device_input()
 print(device1)
 
 save_path = input("save location: ")
